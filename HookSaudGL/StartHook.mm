@@ -10,7 +10,7 @@
 #import "BaseGetter.h"
 #import <unistd.h>
 //   ****** DO NOT USE CURRENT HOOK ITS JUST EXAMPLE ******
-
+//    اي هوك هنا فقط مثال فقط
 // frist get your target function from IDA or Ghidra or any disassembler from your target Framewrok like jsut example
 // be carefull with Ghidra may not match the function so best use IDA
 //let say our target hook is 0x8a340 in anogs its will be like:
@@ -47,7 +47,7 @@ static void ___main(void) {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         //start hook your address
         NSLog(@"[DobbyHookGL]  hook strated .. ");
-        DobbyHook((void*)add8A340, (void*)hook_fun8a340, (void**)&orig_fun8a340);// hide jb for temp
+        DobbyHook((void*)add8A340, (void*)hook_fun8a340, (void**)&orig_fun8a340);// anogs framework hook // just example hook 
         DobbyHook(mainAddradf018, (void*)hook_1029d4744, (void**)orig_1029d4744);//main exec ShadowTr.. example
     });
     
