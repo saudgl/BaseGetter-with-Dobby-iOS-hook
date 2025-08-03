@@ -5,6 +5,9 @@ A tiny utility for jailbroken iOS devices that makes it easy to:
 - **Retrieve** the base address of the main executable
 - **Hook** functions using [Dobby][]
 
+## بالعربي
+- هوك جلبريك فقط
+- هوك لاي داله سواء في فريم وورك او في ملف التفنيذي الاساسي 
 
 ## Requirements
 
