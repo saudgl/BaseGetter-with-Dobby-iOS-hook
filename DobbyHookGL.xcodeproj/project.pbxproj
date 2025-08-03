@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B50FAA692BCB062500A048D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50FAA682BCB062500A048D8 /* Foundation.framework */; };
+		B50FAA6B2BCB062500A048D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50FAA6A2BCB062500A048D8 /* UIKit.framework */; };
+		B5C490512E3EE70B00BCCA11 /* libdobby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C490502E3EE70B00BCCA11 /* libdobby.a */; };
+		B5C490592E3EEAC600BCCA11 /* StartHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5C490582E3EEAC600BCCA11 /* StartHook.mm */; };
+		B5C4905A2E3EEAC600BCCA11 /* StartHook.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C490572E3EEAC600BCCA11 /* StartHook.hpp */; };
+		B5CDFB0F2E3F044700A62AA7 /* libBaseGetter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CDFB0E2E3F044700A62AA7 /* libBaseGetter.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B50FAA652BCB062500A048D8 /* DobbyGL.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = DobbyGL.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50FAA682BCB062500A048D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B50FAA6A2BCB062500A048D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5C490502E3EE70B00BCCA11 /* libdobby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdobby.a; path = Frameworks/libdobby.a; sourceTree = "<group>"; };
+		B5C490522E3EE7E600BCCA11 /* BaseGetter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseGetter.h; sourceTree = "<group>"; };
+		B5C490532E3EE7FD00BCCA11 /* examples.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = examples.mm; sourceTree = "<group>"; };
+		B5C490562E3EE94C00BCCA11 /* dobby.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dobby.h; sourceTree = "<group>"; };
+		B5C490572E3EEAC600BCCA11 /* StartHook.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StartHook.hpp; sourceTree = "<group>"; };
+		B5C490582E3EEAC600BCCA11 /* StartHook.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = StartHook.mm; sourceTree = "<group>"; };
+		B5C5F8822BCB607700D51771 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B5CDFB0E2E3F044700A62AA7 /* libBaseGetter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBaseGetter.a; path = Frameworks/libBaseGetter.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B50FAA612BCB062500A048D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C490512E3EE70B00BCCA11 /* libdobby.a in Frameworks */,
+				B50FAA692BCB062500A048D8 /* Foundation.framework in Frameworks */,
+				B50FAA6B2BCB062500A048D8 /* UIKit.framework in Frameworks */,
+				B5CDFB0F2E3F044700A62AA7 /* libBaseGetter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B50FAA5B2BCB062500A048D8 = {
+			isa = PBXGroup;
+			children = (
+				B50FAA6C2BCB062500A048D8 /* HookSaudGL */,
+				B50FAA672BCB062500A048D8 /* Frameworks */,
+				B50FAA662BCB062500A048D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B50FAA662BCB062500A048D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B50FAA652BCB062500A048D8 /* DobbyGL.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B50FAA672BCB062500A048D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5CDFB0E2E3F044700A62AA7 /* libBaseGetter.a */,
+				B5C490502E3EE70B00BCCA11 /* libdobby.a */,
+				B5C5F8822BCB607700D51771 /* libc++.tbd */,
+				B50FAA682BCB062500A048D8 /* Foundation.framework */,
+				B50FAA6A2BCB062500A048D8 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B50FAA6C2BCB062500A048D8 /* HookSaudGL */ = {
+			isa = PBXGroup;
+			children = (
+				B5C490562E3EE94C00BCCA11 /* dobby.h */,
+				B5C490522E3EE7E600BCCA11 /* BaseGetter.h */,
+				B5C490532E3EE7FD00BCCA11 /* examples.mm */,
+				B5C490572E3EEAC600BCCA11 /* StartHook.hpp */,
+				B5C490582E3EEAC600BCCA11 /* StartHook.mm */,
+			);
+			path = HookSaudGL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B50FAA622BCB062500A048D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C4905A2E3EEAC600BCCA11 /* StartHook.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B50FAA642BCB062500A048D8 /* DobbyGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50FAA7D2BCB062600A048D8 /* Build configuration list for PBXNativeTarget "DobbyGL" */;
+			buildPhases = (
+				B50FAA602BCB062500A048D8 /* Sources */,
+				B50FAA612BCB062500A048D8 /* Frameworks */,
+				B50FAA622BCB062500A048D8 /* Headers */,
+				B50FAA632BCB062500A048D8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DobbyGL;
+			productName = hook1;
+			productReference = B50FAA652BCB062500A048D8 /* DobbyGL.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B50FAA5C2BCB062500A048D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					B50FAA642BCB062500A048D8 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = B50FAA5F2BCB062500A048D8 /* Build configuration list for PBXProject "DobbyHookGL" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B50FAA5B2BCB062500A048D8;
+			productRefGroup = B50FAA662BCB062500A048D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B50FAA642BCB062500A048D8 /* DobbyGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B50FAA632BCB062500A048D8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B50FAA602BCB062500A048D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C490592E3EEAC600BCCA11 /* StartHook.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B50FAA7B2BCB062600A048D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = R29KY9Y52Y;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		B50FAA7C2BCB062600A048D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = R29KY9Y52Y;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		B50FAA7E2BCB062600A048D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R29KY9Y52Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = c17;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		B50FAA7F2BCB062600A048D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R29KY9Y52Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = c17;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B50FAA5F2BCB062500A048D8 /* Build configuration list for PBXProject "DobbyHookGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50FAA7B2BCB062600A048D8 /* Debug */,
+				B50FAA7C2BCB062600A048D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B50FAA7D2BCB062600A048D8 /* Build configuration list for PBXNativeTarget "DobbyGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50FAA7E2BCB062600A048D8 /* Debug */,
+				B50FAA7F2BCB062600A048D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B50FAA5C2BCB062500A048D8 /* Project object */;
+}
